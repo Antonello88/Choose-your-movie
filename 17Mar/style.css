@@ -1,0 +1,83 @@
+
+body {
+    font-family: Public Sans, sans-serif;
+    line-height: 1cm;
+    font-size: 18px;
+}
+
+
+input {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border-left: transparent;
+  border-top: transparent;
+  border-right: transparent;
+}
+
+input ::placeholder{
+  color: #f9f9fb;
+}
+
+
+button {
+    font-family: Public Sans, sans-serif;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+
+}
+
+.animated-border-button {
+    background-color: #fcfcfc;
+    border: none;
+    color: #000000;
+    outline: none;
+    padding: 12px 40px 10px;
+    position: relative;
+  }
+  
+  .animated-border-button:before,
+  .animated-border-button:after {
+    border: 0 solid transparent;
+    transition: all 0.3s;
+    content: '';
+    height: 0;
+    position: absolute;
+    width: 24px;
+  }
+  
+  .animated-border-button:before {
+    border-top: 2px solid #263059;
+    right: 0;
+    top: -4px;
+  }
+  
+  .animated-border-button:after {
+    border-bottom: 2px solid #263059;
+    bottom: -4px;
+    left: 0;
+  }
+  
+  .animated-border-button:hover:before,
+  .animated-border-button:hover:after {
+    width: 100%;
+  }
+
+
+  .card {
+    margin: 0 auto;
+    margin-top: 30px;
+    transform-style: preserve-3d;
+    background-color: #fcfcfc;
+    will-change: transform;
+    width: 240px;
+    height: 360px;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 0 1px #f9f9fb, -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+      28px 28px 28px 0 rgba(34, 33, 81, 0.25);
+    transition: 0.4s ease-in-out transform, 0.3s ease-in-out box-shadow;
+  }
+  
+
